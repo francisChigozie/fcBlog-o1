@@ -1,0 +1,8 @@
+POST http://localhost:4003/blogs
+Content-Type: application/json
+
+{
+    "title": "Governership-19",
+    "snippet": "Vote suppressions",
+    "body": "Elections malpractices is not allowed"
+}

@@ -1,0 +1,2 @@
+GET http://localhost:4003/blogs
+Content-Type: application/json
