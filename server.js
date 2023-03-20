@@ -20,7 +20,7 @@ app.use(express.json())
 const PORT = process.env.PORT || 4003
 
 app.set('view engine', 'ejs');
-//app.set('views', path.join(__dirname,'/public'))
+//app.set('views', path.join(__dirname,'/dist'))
 app.use( express.static( 'views' ) );
 
 //Dev logging middleware

@@ -72,7 +72,64 @@ router.delete('/blogs/:id', asyncHandler(async(req, res) => {
     })
 }))
 
+////////////////////////////////////////////////////////////////////////
+//Sass Portfolio (Dist Folder)
 
+router.get('/sass', function (req, res) {
+    res.render("dist/index", {title:'Full Stack Developer'});
+}); 
+
+router.get('/sass/about', function (req, res) {
+    res.render("dist/about", {title:'About'});
+}); 
+
+router.get('/sass/resume', function (req, res) {
+    res.render("dist/resume", {title:'Resume'});
+}); 
+
+router.get('/sass/work', function (req, res) {
+    res.render("dist/work", {title:'My Work'});
+}); 
+
+router.get('/sass/contact', function (req, res) {
+    res.render("dist/contact", {title:'Contact'});
+}); 
+
+/******** FRENCH LANGUAGE  ******************/ 
+
+router.get('/french', function (req, res) {
+    res.render("dist/french/index", {title:'Accueil'});
+}); 
+
+router.get('/french/about', function (req, res) {
+    res.render("dist/french/about", {title:'À propos de mon'});
+}); 
+
+router.get('/french/resume', function (req, res) {
+    res.render("dist/french/resume", {title:'CV'});
+}); 
+
+router.get('/french/work', function (req, res) {
+    res.render("dist/french/work", {title:'Travail'});
+}); 
+
+/******** GERMAN LANGUAGE  ******************/ 
+
+router.get('/deutsch', function (req, res) {
+    res.render("dist/deutsch/index", {title:'Hiem'});
+}); 
+
+router.get('/deutsch/about', function (req, res) {
+    res.render("dist/deutsch/about", {title:'Über Mir'});
+}); 
+
+router.get('/deutsch/resume', function (req, res) {
+    res.render("dist/deutsch/resume", {title:'Lebenslauf'});
+}); 
+
+router.get('/deutsch/work', function (req, res) {
+    res.render("dist/french/work", {title:'Meine Arbeit'});
+}); 
 
 ////////////////////////////////////////////////////////////////////////
 //404 PAGE
