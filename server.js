@@ -5,6 +5,7 @@ const connectToDatabase = require('./models/index');
 const path = require('path')
 const colors = require('colors')
 const router = require("./routes/routes")
+const sassRouter = require("./routes/routes")
 const cors = require('cors')
 const morgan = require('morgan')
 //const sendmail = require('./routes/sendmail')
@@ -37,6 +38,7 @@ app.use(bodyParser.json());
 
 
 app.use('/', router)
+app.use('/sass', sassRouter)
 //app.use('/api/v1/contacts'contacts)
 //app.use('/api/v1/hotelcontact', hotelcontact)
 app.use(errorHadler)    
