@@ -128,7 +128,7 @@ router.get('/deutsch/resume', function (req, res) {
 }); 
 
 router.get('/deutsch/work', function (req, res) {
-    res.render("dist/french/work", {title:'Meine Arbeit'});
+    res.render("dist/deutsch/work", {title:'Meine Arbeit'});
 }); 
 
 ////////////////////////////////////////////////////////////////////////
